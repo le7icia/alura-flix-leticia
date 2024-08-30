@@ -1,25 +1,41 @@
 :root{
---branco-principal: #ffffff;
---cinza-secundario: #c0c0c0;
---botão-azul: #165bf7;
---cor-de-fundo: #00030c;
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #165bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: "inter";
 }
 
 *{
-margin : 0;
-padding: 0;
+    margin: 0;
+    padding:0;
 }
 
 body{
-     background-color: var(--cor-de-fundo);
-     color: var(--branco-principal);
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
 }
 
 .principal{
-     background-image: url(Background.png);
+    background-image: url(Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .container{
-height: 100vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 
+.container_botão{
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+}
+.botão2{
+    background-color: transparent;
+    border: 1px solid white;
 }
